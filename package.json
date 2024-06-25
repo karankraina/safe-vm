@@ -1,5 +1,5 @@
 {
-  "name": "safe-vm",
+  "name": "safer-vm",
   "version": "0.0.1",
   "description": "Safe way to run JS code in Node.js",
   "main": "lib/index.js",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/karankraina/safe-vm.git"
+    "url": "git+https://github.com/karankraina/safer-vm.git"
   },
   "keywords": [
     "nodejs",
@@ -27,9 +27,9 @@
   "author": "Karan Raina <karanraina1996@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/karankraina/safe-vm/issues"
+    "url": "https://github.com/karankraina/safer-vm/issues"
   },
-  "homepage": "https://github.com/karankraina/safe-vm#readme",
+  "homepage": "https://github.com/karankraina/safer-vm#readme",
   "devDependencies": {
     "@types/node": "^20.13.0",
     "@types/tap": "^15.0.11",
