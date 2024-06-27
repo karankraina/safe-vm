@@ -1,6 +1,6 @@
 {
   "name": "safer-vm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Safe way to run JS code in Node.js",
   "main": "lib/index.js",
   "type": "commonjs",
