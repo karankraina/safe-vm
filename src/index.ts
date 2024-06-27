@@ -1,8 +1,16 @@
-export function createContext() {
-  return {};
+import { Context, RunningCodeOptions, runInContext } from 'node:vm';
+import { createContextWithNodeRealm } from './context';
+
+export interface RunningSafeCodeOptions extends RunningCodeOptions {
+  env?: boolean;
 }
 
-export function runInContext(code: string): unknown {
-  console.log(`Running Code: `, code);
-  return true;
+export function runInSafeContext(
+  code: string,
+  sandbox: Context = {},
+  options?: string | RunningSafeCodeOptions,
+): unknown {
+  const context = createContextWithNodeRealm(sandbox);
+
+  return runInContext(code, context, options);
 }
